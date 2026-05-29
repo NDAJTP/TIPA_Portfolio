@@ -198,7 +198,8 @@ section {
     background: var(--second-bg-color);
     display: flex;
     flex-direction: column;
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 14rem;
+    padding-top: 6rem;
 }
 
 .skills .heading,
@@ -217,9 +218,20 @@ section {
     margin: 0 auto;
     width: 100%;
     flex-grow: 1;
+    justify-items: center;
 }
 
-.skill-box {
+.skill-box:hover,
+a.skill-box:hover {
+    background: white;
+    color: var(--main-color);
+    transform: scale(1.03);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+.skill-box,
+a.skill-box {
     background-color: var(--bg-color);
     border-radius: 1rem;
     cursor: pointer;
@@ -232,6 +244,8 @@ section {
     box-shadow: 0 0 10px var(--main-color);
     overflow: hidden;
     height: 220px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .skill-box:hover {
